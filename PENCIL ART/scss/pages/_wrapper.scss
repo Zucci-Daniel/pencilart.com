@@ -1,0 +1,261 @@
+body{
+    background: $profile-layer;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+
+.wrapper{
+    
+    background: $profile-layer;
+    height: fit-content;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+
+@media  (min-width:$tablet) {
+    width: 95%;
+    margin: 0 auto;
+
+ }
+
+    &__navbar{
+        background: $get-started;
+
+    }
+   
+    &__showcase{
+    
+         margin: 10rem auto;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(2,auto);
+
+    &__contain{
+        // height: 50vh;
+         display: grid;
+        grid-template-columns: 1fr;
+  
+       
+        @media (min-width:$phone) {
+            grid-template-columns: .8fr 1fr;
+        grid-template-rows: repeat(1,1fr);
+        background: $profile-layer;
+        padding: 2rem;
+        border-top: .2rem solid $color-gray;
+     
+        @media  (min-width:$ipad-mini) {
+            width: 95%;
+            margin: 0 auto;
+         
+         }
+         @media  (min-width:$tablet) {
+            width: 95%;
+            margin: 0 auto;
+         
+         }
+         @media  (min-width:$laptop) {
+            width: 95%;
+            margin: 0 auto;
+         
+         }
+    
+    }  
+    &__bio{
+        background: transparent;
+     margin: 2rem auto;
+    }
+    
+   
+
+    &__profile{
+        background:$color-gray;
+        display: grid;
+  grid-template-columns:.2fr 1fr .2fr;
+        grid-template-rows: repeat(2,1fr) .2fr;
+       
+
+        padding: 2rem;
+        margin: 1rem 2rem;
+   
+        
+        @media (min-width:$phone) { 
+            align-self: start;
+            margin-top: -7rem;
+        }  
+        .icon-1{
+            color: black; 
+            font-size: 3rem; 
+    float: right;
+        }
+        .icon-2{
+    @extend .icon-1;
+    float: left;
+        }
+        h2{
+          
+    place-self: center;
+    font-size: 3rem;  
+    text-transform: uppercase; 
+    
+    
+    
+        }
+        fiqure{
+    
+            grid-row: 1/3;
+            grid-column: 2/3;
+            place-self: center;
+            // padding: 3rem;
+            height: 16rem;
+            width: 16rem;
+            display: grid;
+             border-radius: 40rem;
+    
+            img{
+                place-self: center;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                border-radius: 40rem;
+                border: .5rem solid $get-started;
+                box-shadow: 0 .5rem 2rem #00000048; 
+            }
+        }
+    
+        .m{
+            font-size: 5rem;
+            grid-row: 3/4;
+            grid-column: 1/2;
+            place-self: end;
+            color: red;
+        }
+       .p{
+           @extend .m;
+            grid-row: 3/4;
+            grid-column: 3/-1;
+    place-self: start;
+    font-size: 4rem;}
+    
+        h2{
+            padding: 1rem 0;
+            color: $award-border;
+            text-shadow: 0 .1rem .3rem rgba(0, 0, 0, 0.103);
+            grid-column: 2/3;
+            place-self: center;
+            font-size: 2rem;
+        }
+        .name{
+            color: $name;
+            font-weight: lighter;
+        }
+    }
+    
+
+
+    }
+    &__gallery{
+        // margin-top:10rem ;
+        
+        height: fit-content;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(auto,auto);   
+
+
+@media  (min-width:$phone) {
+   grid-template-columns: repeat(2,1fr);
+width: 90%;
+margin: 0 auto;
+ }
+ @media  (min-width:$tablet) {
+    grid-template-columns: repeat(3,1fr);
+ 
+  }
+
+&--layer1{
+background: $profile-layer-2; 
+padding: 5rem 1rem ;
+// margin-bottom: 4rem;
+
+
+
+&__fiqure{
+    background: $profile-layer-3;
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr .1fr .1fr;
+    padding: 2rem 0;
+
+    border-radius: 1rem;
+
+    
+    img{
+        grid-row: 1/2;
+        height: 100%;
+        width: 60%;
+        grid-column: 1/-1;
+        place-self: center;
+        margin-top: -6rem;
+        border: 1rem solid rgb(0, 0, 0);
+        box-shadow:0 1rem 6rem #0000002a;
+        border-radius: .5rem;
+      
+     
+       
+    }
+
+    p{
+        color: black;
+        padding:0 1rem;
+        font-size: 1.3rem;
+    }
+    h3{
+        font-size: 2rem;
+        font-weight: lighter;
+        text-align: center;
+        place-self: center;
+        color: white;
+        background: $get-started;
+        //border-radius: 1rem;
+        padding: .4rem .5rem;
+        box-shadow: 0 .3rem 1rem inset rgb(32, 32, 32);
+        background-image: linear-gradient(to left,rgb(150, 9, 9)20%,rgb(32, 32, 32));
+        transform:rotate(15deg);
+       margin-top:-1rem ;
+       cursor: pointer;
+     transition: all 200ms ease;
+  
+     
+       &:hover{
+            transform:rotate(0deg);
+            background-image: linear-gradient(to right,rgb(150, 9, 9)20%,rgb(32, 32, 32));
+       
+            
+        }
+      
+       
+    }
+    a{     
+text-align: center;
+margin:1rem ;
+ margin-top: 1rem;
+justify-self:center ;
+    }
+}  
+}
+
+ }
+    }
+} 
+
+.tm{
+    font-size: 6rem; 
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}

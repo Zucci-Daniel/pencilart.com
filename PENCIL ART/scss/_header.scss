@@ -1,0 +1,221 @@
+.header{
+   height: 60vh;
+    grid-row: 1/2;
+    background-image: linear-gradient($get-started,rgba(1, 38, 63, 0.747)), url(../image/bg-2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(3,1fr);
+
+
+    
+@media (min-width:$phone) {
+    height: 80vh;
+ }
+ @media (min-width:$ipad) {
+    height: 80vh;
+   
+ }
+ @media (min-width:$tablet) {
+    height: 95vh;
+    margin-bottom: 20rem;
+ }
+
+    &__title{
+        grid-row: 2/3;
+        grid-column: 1/span 2;
+    align-self: end;
+    justify-items: end;
+
+    @media (min-width:$ipad) {
+        justify-self: start;
+       }
+
+    h1{
+        color: white;
+        // @include heading-before;
+        @include heading-after;
+      
+
+        animation-name: rotate; 
+        animation-duration: 400ms;    
+        animation-timing-function: ease-in;
+animation-fill-mode: forwards; 
+transition: transform 5s ease-in-out;
+        @keyframes rotate{
+            0%{  
+transform: rotate(360deg); 
+           
+            } 
+ 
+           100%{
+            transform: rotate(0); 
+                      } 
+           
+ }
+
+
+        &::after{
+            border-right:.4rem solid white  ;
+            border-bottom: .4rem solid white;
+        }
+        @media (min-width:$ipad) {
+            padding:3rem 5rem;
+           }
+           @media (min-width:$tablet-mini) {
+            padding:3rem 6rem;
+          
+           }
+           @media (min-width:$laptop) {
+            margin:0 6rem;
+          
+           }
+    }
+}
+    &__description{
+        grid-row: 3/4; 
+        grid-column: 1/span 2;
+        z-index: 2;
+        display: grid;
+        place-items: center;
+        padding: 2rem 0;
+        p{
+            display: block;
+            padding: 2rem 4rem;
+            color: white;
+
+
+            animation-name: show;
+            animation-duration: 1s;   
+            animation-timing-function: ease-in;
+    animation-fill-mode: forwards; 
+    
+            @keyframes show{
+                0%{
+                   color: transparent;
+                } 
+               
+               100%{
+              color: initial;
+                          } 
+               
+     }
+    
+ 
+
+
+            @media (min-width:$ipad) {
+               padding:3rem 4rem;
+              }
+              @media (min-width:$tablet-mini) {
+                padding:3rem 6rem;
+              
+               }
+        }
+        a{
+            display: block;
+color: white;
+
+
+
+animation-name: show-bg; 
+animation-duration: 1.4s;   
+animation-timing-function: ease-in;
+//animation-fill-mode: forwards; 
+  
+@keyframes show-bg{
+    0%{
+  border: transparent;
+        background: transparent;
+   box-shadow: none;
+   color: transparent;
+    } 
+    
+   100%{
+        border: inherit;
+  background: inherit;
+              } 
+   
+}
+@media (min-width:$ipad) {
+    margin:2rem 0;
+   }
+ }
+    }
+    &__image--1{
+        grid-row: 4/span 2;
+        grid-column: 2/span 1;
+        z-index: 2;
+
+transition: all 300ms ease-in-out;
+        &:hover{
+            z-index: 8;
+           
+            transform: scale(1.1);
+        }
+
+ @media (min-width:$tablet) {
+  height: 30rem;
+ }
+ }
+    &__image--2{
+        margin: 2rem 3rem;
+        grid-row: 4/span 2;
+        grid-column: 3/span 1;
+        z-index: 3;
+        margin-left: -3rem;
+
+        transition: all 300ms ease-in-out;
+        &:hover{
+       
+            transform: scale(1.1);
+            
+        }
+           
+@media (min-width:$ipad) {
+    margin: 2rem 5rem;
+    margin-left: -5rem;
+// padding: 0 4rem;
+
+}
+@media (min-width:$tablet) {
+    height: 30rem;
+   }
+}
+        .img{
+            width: 100%;
+            height: 100%;
+            border: 1rem solid black;
+            @media (min-width:$tablet-mini) {
+width: 80%;
+               }
+               @media (min-width:$tablet-mini-2) {
+                width: 60%;
+                               }
+
+        }
+}
+
+.custom-shape-divider-bottom-1601554245 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+.custom-shape-divider-bottom-1601554245 svg {
+    position: relative;
+    display: block;
+    width: calc(136% + 1.3px);
+    height: 210px;
+}
+
+.custom-shape-divider-bottom-1601554245 .shape-fill {
+    fill: $profile-layer-3;
+}

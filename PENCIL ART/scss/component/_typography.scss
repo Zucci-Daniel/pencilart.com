@@ -1,0 +1,21 @@
+.heading-1{
+    align-self: start;
+font-size: 3rem;
+text-align: center;
+text-transform: capitalize;
+color: black; 
+      
+// @include heading-before;
+// @include heading-after;
+}
+
+.para{
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 1rem;
+    line-height: 2rem;
+    color: #181717da;
+    font-weight: 600;
+    text-align:justify ;
+ 
+} 

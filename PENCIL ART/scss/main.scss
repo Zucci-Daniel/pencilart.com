@@ -1,0 +1,48 @@
+$get-started:#173D40;
+$btn-hire:#2A2A2A;
+$award-border:#F2D412;
+$award-fill:#640404; 
+$footer:#010116;
+$profile-layer:#f7f4f4ec;
+$profile-layer-2:#fcf9f9ea;
+$profile-layer-3:#f1f0f0;
+$shadow:0 .2rem 1rem #9e9e9e17;
+$more-artist:#1C0B17;
+$border:#cfcdcd;
+$cart-btn:#58BC40;
+$buy-btn:#BC1616;
+$para:#181717da;
+$name:#181717e7;
+$color-gray:#e4e3e3;
+
+
+
+///media queries manager/////
+
+$phone:31.25em;//500px;
+$ipad-mini:37.5em;//600px;
+$ipad-mini-2:43.75em;//700px;
+$ipad:48em;//768px;
+$tablet-mini:50em;//800px;
+$tablet-mini-2:56.25em;//900px;
+$tablet:64em;//1024px;
+$laptop:85em;//1360px;
+
+////font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+//////
+@import "component/buttons";
+@import "component/mixin";
+@import "component/typography";
+
+@import "base";
+@import "header";
+@import "major_artist";
+@import "about"; 
+@import "form";
+@import "footer";
+
+@import "pages/wrapper";
+
+
+ 

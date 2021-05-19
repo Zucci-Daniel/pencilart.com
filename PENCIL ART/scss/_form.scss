@@ -1,0 +1,94 @@
+.form{
+  
+    height: fit-content;
+    padding: 4rem; 
+    color: white;
+    background-image:linear-gradient(to top,rgba(2, 0, 22, 0.801),rgba(2, 0, 0, 0.911)), url(../image/arti.jpg);
+    background-size: cover;
+    background-position:center;
+
+     h3{
+margin-top: 2rem;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: lighter;
+
+         @include heading-before;
+          @include heading-after;
+
+    }
+    form{
+
+        margin: 2rem;
+        margin-top: 10rem;
+     display: grid;
+    
+     @media (min-width:$tablet-mini ){
+      width: 50%;
+    margin: 2rem auto;  
+}
+        
+input{
+    background: transparent;
+
+    color: white;
+    font-size: 2rem;
+    font-weight: lighter;
+    padding: 0 1rem;
+    border: none;
+    border-bottom: .1rem solid rgb(151, 150, 150);
+    border-radius: .2rem;
+    width: 70%; 
+    height: 4rem;
+    display: block;
+    margin: .3rem auto;
+    &::before{
+        content: "r";
+        font-size: 3rem;
+        color: black;
+    }
+}
+.suu{
+    color: white;
+    text-align:center ;
+    margin: 1rem auto;
+    display: block;
+    padding: 0; 
+    box-shadow: none;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+ul{
+
+ margin: 0 auto;
+    li{
+        display: inline-block;
+  
+a{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+   
+}
+    }
+}
+.send{
+
+    color: white;
+    background: black;
+    border: .2rem solid white;
+    border-radius: .2rem;
+    height: 3rem;
+    line-height: 3rem;
+    display: block;
+    text-align: center;
+
+    width: 40%;
+    margin: 1rem auto;
+}
+    }
+  
+}
